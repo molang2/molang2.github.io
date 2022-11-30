@@ -1,66 +1,92 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
+    <link rel="stylesheet" type="text/css" href="./fonts/font.css">
     <meta charset="UTF-8">
-    <title>이준영 html css</title>
+    <title>Molang2's HTML CSS page</title>
     <style>
-      #header{
-        
-        height:130px;
-		    background:grey;
-        text-align: left;
-        margin:0px;
-        border: 10px solid;
-      }
-      #bloglist{
-        float:left;
-        background: grey;
-        height: 700px;
-        border: 5px solid;
-      }
       
-      #main{
-        text-align: center;
+      html{
+        font-family: "Dongle";
+        font-size: 30px;
+      }
+      body{
+        margin: 0px;
+      }
+      a {
+        text-decoration: none;
+        color: inherit;
       }
 
-      .img{
-        width : 200px;
+      #header{
+        height:140px;
+		    background:grey;
+        border: 5px solid;
+        text-align: center;
+        font-size: 50px;
+        /* padding : 15px; */
       }
-      .molangkick{
+      #bloglist{
+        height: 900px;
+        width : 200px;
+        margin-top: 1px;
+        /* padding: 10px;  */
+        background: url('./images/junyoung.jpg') no-repeat;
+        background-size: 200px;
+        float:left;
+        /* background: grey; */
+        border: 5px solid;
+        text-align: center;
+        /* padding-bottom: 20px; */
+        /* display: inline-block; */
+       
+      }
+      #main{
+      
+        text-align: center; 
+      }
+        /* position: relative; */
+        /* left: 380px; */
+        /* bottom:100px; */
+      #main img{
         width : 300px;
         height: 200px;
-        position: relative;
-        right: 500px;
-        bottom:50px;
-      }
+      } 
+
+      
     </style>
 </head>
 <body>
     <!--div : 분할-->
     <div id="contents">
         <div id="header">
-            <h1>이준영's HTML CSS PAGE</h1>
-            
+            <p>Molang2 HTML CSS PAGE
         </div>
+
         <div id="bloglist">
-            <ul>
-                <li><a>네이버 클라우드 플랫폼</a></li>
-                <li>깃허브</li>
-                <li>Linux</li>
-                <li>HTML</li>
-              </ul>
+            <br><br><br><br><br><br>
+            <p><a href="./molangncp.html">네이버 클라우드 플랫폼</a>
+            <p><a href="https://github.com/molang2">GitHub</a>
+            <p><a>Linux</a>
+            <p><a>HTML</a>
+            <p><a href="https://www.youtube.com/channel/UCaxZ90bffOokcYF7FQTaSfA">YOUTUBE</a> 
         </div>
+
         <div id="main">
-            <h2>Profile</h2>
-            <p>네이버 클라우드 개발자 1기 교육생
+            <p>Profile</p>
+            <p>네이버 클라우드 AlaaS 개발자 양성과정 1기 교육생
             <p>2022년 11월 7일 1기 과정 시작
-            <h2>Purpose</h2>
-            <p>HTML의 CSS 구현을 통한 SITE 제작
-            <img class="molangkick" src="molang2.jpg">
-        </div>
-        <div id="molang">
-            <img class="img" src="molang.png">
-        </div>
+            <p>Purpose</p>
+            HTML의 CSS 구현을 통한 SITE 제작
+              <!-- <div id="molangleft"> -->
+                <br>
+                <img class="molangkick" src="./images/molang2.jpg">
+                <img class="molanghello" src="./images/molanghello.gif">
+                <img class="molangeyes" src="./images/molangeyes.gif">
+              </div>
+
+
+        <!-- </div> -->
     </div>
 </body>
 </html>
